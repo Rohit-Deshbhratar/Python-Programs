@@ -1,8 +1,19 @@
+
+
+# from selenium import webdriver
+#
+# driver = webdriver.Chrome()
+# driver.get("https://www..facebook.com")
+
 from selenium import webdriver
-driver = webdriver.Chrome(r"C:\Users\rohit\AppData\Local\Programs\Python\Python311\chromedriver.exe")
-driver.get("https://facebook.com")
 
+from selenium.webdriver.common.keys import Keys
 
+# You will import the webdriver and keys from the selenium module first.
+
+driver = webdriver.Firefox()
+
+driver.get("https://www.simplilearn.com")
 
 
 
