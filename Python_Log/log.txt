@@ -1,0 +1,6 @@
+WARNING:user:This is WARNING
+ERROR:user:This is ERROR
+INFO:user:This is INFO
+WARNING:user:This is WARNING
+ERROR:user:This is ERROR
+INFO:user:This is INFO
