@@ -1,0 +1,28 @@
+import pyodbc
+
+class DBConnection:
+    connection_string = ""
+    
+    def __init__(self):
+        self.DRIVER_NAME = 'SQL SERVER'
+        self.SERVER_NAME = 'RICKY'
+        self.DATABASE_NAME = 'HR'
+    
+    def connection(self):
+        self.connection_string = f"""
+                DRIVER={{{self.DRIVER_NAME}}};
+                SERVER={self.SERVER_NAME};
+                DATABASE={self.DATABASE_NAME};
+                Trusted_Connection=yes;                
+                """
+        conn = pyodbc.connect(self.connection_string)
+        return conn
+
+    
+
+def main():
+    dbconnection = DBConnection()
+    dbconnection.connection()
+
+main()
+    
