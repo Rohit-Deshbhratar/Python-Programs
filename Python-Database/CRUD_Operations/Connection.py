@@ -5,7 +5,7 @@ class Connection:
 
     def __init__(self):    
         self.conn = pymssql.connect(
-            server='RICKY',
+            server='ROHIT',
             database='ETL',
             as_dict=True
         )

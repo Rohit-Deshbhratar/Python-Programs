@@ -5,8 +5,8 @@ class DBConnection:
     
     def __init__(self):
         self.DRIVER_NAME = 'SQL SERVER'
-        self.SERVER_NAME = 'RICKY'
-        self.DATABASE_NAME = 'HR'
+        self.SERVER_NAME = 'ROHIT'
+        self.DATABASE_NAME = 'BikeStores'
     
     def connection(self):
         self.connection_string = f"""
@@ -16,6 +16,7 @@ class DBConnection:
                 Trusted_Connection=yes;                
                 """
         conn = pyodbc.connect(self.connection_string)
+        print("Connected successfully...")
         return conn
 
     
